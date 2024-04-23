@@ -155,7 +155,7 @@ router.post("/getlocation", async (req, res) => {
     res.send("Server Error");
   }
 });
-router.get("/foodData", async (req, res) => {
+router.post("/foodData", async (req, res) => {
   try {
     // console.log( JSON.stringify(global.foodData))
     // const userId = req.user.id;
