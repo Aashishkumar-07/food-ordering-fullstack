@@ -17,15 +17,15 @@ app.use(cors(
     credentials: true
   }
   ));
-const origin = "https://food-ordering-frontend-flame.vercel.app";
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", origin);
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+// const origin = "https://food-ordering-frontend-flame.vercel.app";
+// app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", origin);
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
 app.use(express.json());
 
 app.get("/", (req, res) => {
