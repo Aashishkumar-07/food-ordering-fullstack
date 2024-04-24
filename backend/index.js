@@ -10,6 +10,13 @@ const express = require("express");
 const app = express();
 const port = 5000;
 
+app.use(cors(
+  {
+    origin : ["https://food-ordering-frontend-flame.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+  ));
 const origin = "https://food-ordering-frontend-flame.vercel.app";
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", origin);
