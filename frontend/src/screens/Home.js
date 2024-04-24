@@ -11,7 +11,7 @@ export default function Home() {
     let response = await fetch("https://food-ordering-api-henna.vercel.app/api/auth/foodData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
